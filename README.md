@@ -23,10 +23,6 @@ This project implements a simple, real-time temperature and humidity monitoring 
 * Resistors (e.g., 220 Ohm for LED, 10k Ohm for button if not using INPUT_PULLUP)
 * Breadboard and Jumper Wires
 
-## Wiring Diagram
-
-*(You should ideally add a simple Fritzing diagram or a hand-drawn diagram here. If you create a diagram, save it as `wiring_diagram.png` in the project folder and update the path below.)*
-
 Here's a basic connection guide:
 
 * **DHT12 Sensor:**
@@ -78,30 +74,3 @@ This project requires the Arduino IDE and the following libraries:
 * **LCD not showing anything:** Double-check I2C wiring (SDA/SCL, VCC/GND) and the I2C address (default 0x27, but some modules use 0x3F or others. You can use an I2C scanner sketch to find the correct address).
 * **DHT readings are `NaN`:** Ensure DHT sensor is correctly wired, and the correct `DHTTYPE` is defined (DHT11, DHT22, or DHT12).
 * **Button not responding:** Verify wiring for the button and ensure `INPUT_PULLUP` is correctly used, or add an external pull-up/pull-down resistor.
-
----
-
-## 6. Pushing Your Updated README to GitHub
-
-After you've created and saved the `README.md` file in your project folder:
-
-1.  **Go back to your Terminal / Git Bash** in your project directory (`C:\Users\GuyCo\Desktop\TemperatureMonitor`).
-2.  **Add the new README file to the staging area:**
-    ```bash
-    git add README.md
-    ```
-3.  **Commit the changes:**
-    ```bash
-    git commit -m "Add project README.md"
-    ```
-4.  **Push your changes to GitHub:**
-    ```bash
-    git push origin master
-    # Or: git push origin main
-    ```
-
-Now, when you refresh your repository page on GitHub, you'll see your detailed and well-structured `README.md` right there!
-
----
-
-That covers the entire process, Guy! Your Arduino project is now properly hosted on GitHub. Let me know if you have any other questions or run into any issues.
